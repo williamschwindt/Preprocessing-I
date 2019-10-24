@@ -1,1 +1,305 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.heading {
+  text-align: center;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'lato';
+  font-weight: 300;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    font-size: 40%;
+  }
+}
+html nav,
+body nav {
+  display: flex;
+  justify-content: center;
+  background-color: #404040;
+  border-bottom: 2px solid black;
+}
+html nav a,
+body nav a {
+  transition: 0.3s;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1% 2%;
+}
+html nav a:hover,
+body nav a:hover {
+  transition: 0.3s;
+  color: #3498db;
+}
+html header,
+body header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 51, 95, 0.5)), url(../pictures/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  html header,
+  body header {
+    height: 80vh;
+  }
+}
+html header .name-container,
+body header .name-container {
+  margin-top: 10%;
+}
+html header .name-container h1,
+body header .name-container h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+html header .name-container h2,
+body header .name-container h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+html header .name-container h3,
+body header .name-container h3 {
+  text-align: center;
+  color: #fff;
+  margin-top: 10%;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+html header .name-container p,
+body header .name-container p {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  html header .name-container p,
+  body header .name-container p {
+    line-height: 120%;
+  }
+}
+html .container,
+body .container {
+  width: 80%;
+  margin: 0 auto;
+}
+html .container .info,
+body .container .info {
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  justify-content: center;
+}
+html .container .info .skills,
+body .container .info .skills {
+  padding: 0 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+html .container .info .skills h4,
+body .container .info .skills h4 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+html .container .info .skills ul,
+body .container .info .skills ul {
+  font-size: 2rem;
+}
+html .container .info .skills ul li,
+body .container .info .skills ul li {
+  border-bottom: 1px solid black;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+html .container .info .work-history,
+body .container .info .work-history {
+  padding: 0 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+html .container .info .work-history h4,
+body .container .info .work-history h4 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+html .container .info .work-history ul,
+body .container .info .work-history ul {
+  font-size: 2rem;
+}
+html .container .info .work-history ul li,
+body .container .info .work-history ul li {
+  border-bottom: 1px solid black;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+html .container .contact,
+body .container .contact {
+  border-top: 1px solid black;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+html .container .contact h4,
+body .container .contact h4 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+html .container .contact p,
+body .container .contact p {
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
